@@ -7,7 +7,7 @@
 
 body {
 	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	background: #fff;
+	background: black;
 	color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -164,7 +164,7 @@ a:focus {
 
 .landing-header__title {
 	font-family: 'Kaushan Script', serif;
-	font-size: 8em;
+	font-size: 6em;
 	font-weight: 400;
 	line-height: 1;
 	margin: 0.15em 0 0;
@@ -227,11 +227,13 @@ a:focus {
 	padding: 0;
 	list-style: none;
 	text-align: center;
+
 }
 
 .featured-list__item {
-	width: 33.33%;
+	width: 25%;
 	padding: 10% 0 0;
+	margin-top: 50%;
 }
 
 .featured-list__link {
@@ -249,19 +251,20 @@ a:focus {
 }
 
 .featured-list__title {
-	font-weight: 500;
+	font-weight: 450;
 	display: inline-block;
-	padding: 0 0.5em;
+	padding: 0 0.9em;
 	line-height: 1.5;
 	color: #344160;
-	background: #fffe8d;
+	background: rosybrown;
 	-webkit-transition: color 0.3s, background 0.3s;
 	transition: color 0.3s, background 0.3s;
+	border-radius: 20%;
 }
 
 .featured-list__link:hover .featured-list__title,
 .featured-list__link:focus .featured-list__title {
-	color: #fffe8d;
+	color: #1684a5;
 	background: #344160;
 }
 
@@ -353,14 +356,19 @@ a:focus {
 /* All transitions and animations */
 /**********************************/
 
-.landing--above {
+ .landing--above {
 	-webkit-transform-origin: 50% 80%;
 	transform-origin: 50% 80%;
 	-webkit-transition: -webkit-transform 1s 0.6s, opacity 1s 0.6s;
 	transition: transform 1s 0.6s, opacity 1s 0.6s;
 	-webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 	transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-}
+	margin-left: 14%;
+	 height: fit-content;
+	 width: fit-content;
+	 border-radius: 40%;
+	 box-shadow: 3px 3px rgb(187, 144, 187), -1em 0 .4em rgb(197, 138, 179);
+} 
 
 .landing-layout--open .landing--above {
 	opacity: 0;
@@ -375,7 +383,8 @@ a:focus {
 .landing--beneath {
 	-webkit-transform-origin: 50% 10%;
 	transform-origin: 50% 10%;
-	opacity: 0;
+	opacity: 1%;
+	/* might turn back to 0 opacity */
 	-webkit-transform: scale3d(4, 4, 1);
 	transform: scale3d(4, 4, 1);
 	-webkit-transition: -webkit-transform 0.8s, opacity 0.8s 0.1s;
@@ -397,6 +406,7 @@ a:focus {
 .landing-header__title {
 	-webkit-transition: -webkit-transform 1s;
 	transition: transform 1s;
+	margin-top:40%;
 }
 
 .landing-layout--open .landing-header__title {
@@ -404,6 +414,7 @@ a:focus {
 	transition: transform 2s 0.8s;
 	-webkit-transform: translate3d(0, -30vh, 0);
 	transform: translate3d(0, -30vh, 0);
+	text-align: center;
 }
 
 .landing-header__tagline {
@@ -418,7 +429,7 @@ a:focus {
 }
 
 .landing-header__title span {
-	color: #344160;
+	color: #41174e;
 	-webkit-transition-timing-function: cubic-bezier(1, 0.005, 0.33, 1);
 	transition-timing-function: cubic-bezier(1, 0.005, 0.33, 1);
 	-webkit-animation-name: floatAround-1;
@@ -506,6 +517,7 @@ a:focus {
 	transform: translate3d(0, 10px, 0) scale3d(0.8, 0.8, 1);
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
+	margin-top: 20%;
 }
 
 .landing-layout--open .featured-list__item {
