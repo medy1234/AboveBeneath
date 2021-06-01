@@ -4,14 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Above &amp; Beneath: Featured Content Layout Effect | Demo 1 | Codrops</title>
+		<title>Meron Birthday Weekend</title>
 		<meta name="description" content="A landing page template with a featured content section and background sounds that change according to the view" />
 		<meta name="keywords" content="landing page, background sound, aquatic theme, effect, transition, animation" />
 		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+		<link rel="shortcut icon" href="favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<link rel="stylesheet" type="text/css" href="css/style3.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -70,17 +71,28 @@
 		<main class="landing-layout">
 			<!-- Landing wrap with sections -->
 			<div class="landing-wrap">
-				<section class="landing landing--above" style="background-image: url(img/1.jpg);"></section>
-				<section class="landing landing--beneath" style="background-image: url(img/2.jpg);">
+				<section class="landing landing--above">
+					<!-- <video>
+						<source src= "video\morningCoffee.mp4" type ="video/mp4">
+					</video>  -->
+					<video class="landing landing--above star-five" autoplay loop muted preload="auto" >
+						<source src="video\morningCoffee.mp4" type="video/mp4">
+						Your browser does not support the HTML5 video tag.
+					</video>
+				</section>
+
+				<!-- style="background-image: url(img/5.jpg);" may add back in-->
+				<section class="landing landing--beneath" style="background-image: url(img/bali.jpg);">
 					<canvas id="bubbles"></canvas>
 				</section>
 			</div><!-- /landing-wrap -->
 			<!-- Landing header with title -->
 			<header class="landing-header">
-				<h1 class="landing-header__title" aria-label="Seaweed">
-					<span>S</span><span>e</span><span>a</span><span>w</span><span>e</span><span>e</span><span>d</span>
+				<h1 class="landing-header__title" aria-label="Blue Divers">
+					<!-- <span>B</span><span>l</span><span>u</span><span>e</span> <span>D</span><span>i</span><span>v</span><span>e</span><span>r</span><span>s</span> -->
+					<span>June 6th 1990</span> <br> <span>A Queen Was Born</span>
 				</h1>
-				<p class="landing-header__tagline">Super-nutritious ocean plants</p>
+				<p class="landing-header__tagline">Birthday Weekend in Full Effect</p>
 			</header><!-- /landing-header -->
 			<!-- Trigger button for layout change -->
 			<button class="button button--trigger" aria-label="View more">
@@ -96,41 +108,48 @@
 			<section class="featured-content">
 				<ul class="featured-list">
 					<li class="featured-list__item">
-						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw1.svg" alt="Seaweed 1">
-							<h3 class="featured-list__title">Green Glory</h3>
+						<a href="birthdayItinerary.pdf" class="featured-list__link">
+			
+							 <i class="fas fa-clipboard-list fa-5x featured-list__img"></i> <br>
+							 <!-- class="featured-list__img" src="img/icons/d1.svg" alt="Diving 1"> -->
+							<h3 class="featured-list__title">Birthday Itinerary </h3>
 						</a>
 					</li>
 					<li class="featured-list__item">
-						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw2.svg" alt="Seaweed 2">
-							<h3 class="featured-list__title">Mystic Crunch</h3>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSexJ50KuhBMY-PByGZRvhRpkq_dhvyzyCoIFDI5f3u4E4QGWw/viewform" class="featured-list__link">
+							<i class="fas fa-file-signature fa-5x featured-list__img"></i> <br>
+							<!-- <img class="featured-list__img" src="img/icons/d2.svg" alt="Diving 2"> -->
+							<h3 class="featured-list__title">Aeriel Silk Waiver</h3>
 						</a>
 					</li>
 					<li class="featured-list__item">
-						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw3.svg" alt="Seaweed 3">
-							<h3 class="featured-list__title">Fine Jelly</h3>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSfc_u1GxKLSwY1yhp-g5AX7Fww3LVF4Qfuvj90QnKz_zPnxpg/viewform?vc=0&c=0&w=1&flr=0&gxids=7628" class="featured-list__link">
+							<i class="fas fa-file-signature fa-5x featured-list__img"></i> <br>
+							<!-- <img class="featured-list__img" src="img/icons/d2.svg" alt="Diving 2"> -->
+							<h3 class="featured-list__title">Aeriel Silk 2nd Waiver</h3>
 						</a>
 					</li>
 					<li class="featured-list__item">
-						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw4.svg" alt="Seaweed 4">
-							<h3 class="featured-list__title">Nutri Bomb</h3>
+						<a href="Salinas $75 Large Party Menu.pdf" class="featured-list__link">
+							<i class="fas fa-utensils fa-4x featured-list__img"></i> <br>
+							<!-- <img class="featured-list__img" src="img/icons/d3.svg" alt="Diving 3"> -->
+							<h3 class="featured-list__title">Dinner Menu</h3>
 						</a>
 					</li>
-					<li class="featured-list__item">
+				
+		
+					<!-- <li class="featured-list__item">
 						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw5.svg" alt="Seaweed 5">
-							<h3 class="featured-list__title">Holy Water</h3>
+							<img class="featured-list__img" src="img/icons/d5.svg" alt="Diving 5">
+							<h3 class="featured-list__title">Snorkeling</h3>
 						</a>
-					</li>
-					<li class="featured-list__item">
+					</li> -->
+					<!-- <li class="featured-list__item">
 						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw6.svg" alt="Seaweed 6">
-							<h3 class="featured-list__title">Juicy Magic</h3>
+							<img class="featured-list__img" src="img/icons/d6.svg" alt="Diving 6">
+							<h3 class="featured-list__title">First Class</h3>
 						</a>
-					</li>
+					</li> -->
 				</ul>
 			</section><!-- /featured-content -->
 			<!-- Codrops header -->
@@ -139,11 +158,11 @@
 					<a class="codrops-icon codrops-icon--prev" href="" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
 					<a class="codrops-icon codrops-icon--drop" href="" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
 				</div>
-				<h1 class="codrops-header__title">Featured Content Layout Effect</h1>
+				<h1 class="codrops-header__title"></h1>
 				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Demo 1</a>
+					<!-- <a href="index.html">Demo1</a>
 					<a href="index2.html">Demo 2</a>
-					<a href="index3.html">Demo 3</a>
+					<a class="current-demo" href="index3.html">Demo 3</a> -->
 				</nav>
 			</header><!-- /codrops-header -->
 			<div class="loader">
@@ -156,6 +175,6 @@
 		</main>
 		<script src="js/howler.min.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/main_3.js"></script>
 	</body>
 </html>
