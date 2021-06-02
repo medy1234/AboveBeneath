@@ -646,7 +646,7 @@ a:focus {
 
 /* Media queries */
 
-@media screen and (max-width: 43.75em) {
+@media screen and (max-width: 375px) {
 	.codrops-demos {
 		margin: 0 0 0 0.5em;
 		width: 100%;
@@ -658,12 +658,22 @@ a:focus {
 		font-weight: bold;
 		color: #fffe8d;
 	}
+
+	.landing--above{
+		width:fit-content;
+		height:fit-content;
+		 box-shadow: .6px .1px rgb(187, 144, 187), -2em 0 4em rgb(197, 138, 179);
+		 margin: auto;
+		 border-radius:inherit;
+  
+	  }	
 	.landing-header__title {
 		font-size: 2.5em;
 	}
 	.landing-layout--open .landing-header__title {
 		-webkit-transform: translate3d(0, -40vh, 0);
 		transform: translate3d(0, -40vh, 0);
+		width: fit-content;
 	}
 	.landing-header__tagline {
 		font-size: 0.55em;
